@@ -4,7 +4,7 @@ let productosData = [];
 
 // Realizar una solicitud Fetch a la API y actualizar la tabla y el menú desplegable
 function fetchDataAndUpdateTable() {
-  fetch("http://localhost:3030/")
+  fetch("https://backend-coresa-stock.onrender.com/")
     .then((response) => response.json())
     .then((data) => {
       productosData = data;
